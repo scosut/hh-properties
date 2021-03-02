@@ -1,0 +1,1143 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags always come first -->
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed&family=Sriracha&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="css/styles.css" />
+		<link rel="icon" type="image/png" href="images/favicon.png" />
+		<title>H&H Properties | Rental Application</title>
+	</head>
+	<body>
+    <!-- Contact Information -->
+    <header class="header">
+      <div class="container header-container">
+        <div class="header-item">
+          <i class="fa fa-phone"></i> <a href="tel:6059406695">(605) 940-6696</a>
+        </div>
+        <div class="header-item">
+          <i class="fa fa-envelope"></i> <a href="mailto:info@hhproperties.com">info@hhproperties.com</a>
+        </div>
+      </div>
+    </header>
+
+		<!-- Top Navigation -->
+		<nav class="navbar navbar-expand-md sticky-top">
+			<div class="container">
+				<a class="navbar-brand" href="index.html"><img src="images/logo.png"></a>
+				<button id="navbarToggler" class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navbarTogglerContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				
+				<div class="collapse navbar-collapse" id="navbarTogglerContent">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="index.html">HOME</a>
+						</li>
+            <li class="nav-item">
+							<a class="nav-link" href="about.html">ABOUT</a>
+						</li>					
+						<li class="nav-item dropdown">
+							<a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">FORMS</a>
+							<div id="navbarDropdownContent" class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item" href="rental_application.html">Rental Application</a>
+							</div>
+						</li>
+            <li class="nav-item">
+							<a class="nav-link" href="login.html">LOGIN</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+    <!-- Main Heading -->
+    <div class="main-heading">
+      <div class="container">
+        <h1>Rental Application</h1>
+      </div>
+    </div>
+
+    <!-- Applicant Information -->
+    <div class="container">
+      <div class="card card-form mb-5">
+          <div class="card-body">
+              <h2 class="card-title">APPLICANT INFORMATION</h2>
+              <p class="form-legend">(<span class="text-required">*</span> indicates a required field)</p>
+              <form class="form">
+                <div class="form-group">
+                  <label for="property-location" class="col-form-label required">Property</label>
+                  <select id="property-location" name="property-location" class="form-control flat">
+                    <option></option>
+                  </select>
+                </div>
+                <div class="form-group">
+                    <label for="applicant-first-name" class="col-form-label required">First Name</label>
+                    <input type="text" id="applicant-first-name" name="applicant-first-name" class="form-control flat" />
+                </div>
+                <div class="form-group">
+                    <label for="applicant-middle-name" class="col-form-label">Middle Name</label>
+                    <input type="text" id="applicant-middle-name" name="applicant-middle-name" class="form-control flat" />
+                </div>
+                <div class="form-group">
+                    <label for="applicant-last-name" class="col-form-label required">Last Name</label>
+                    <input type="text" id="applicant-last-name" name="applicant-last-name" class="form-control flat" />
+                </div>
+                <div class="inner-card">
+                  <div class="inner-card-title form-group">
+                      <label class="col-form-label required">Phone Number</label>
+                  </div>      
+                  <div class="inner-card-body">
+                    <div class="form-group">
+                      <label for="applicant-home-phone" class="col-form-label">Home Phone</label>
+                      <input type="text" id="applicant-home-phone" name="applicant-home-phone" class="form-control flat" />
+                    </div>
+                    <div class="form-group">
+                      <label for="applicant-cell-phone" class="col-form-label">Cell Phone</label>
+                      <input type="text" id="applicant-cell-phone" name="applicant-cell-phone" class="form-control flat" />
+                    </div>
+                    <div class="form-group">
+                      <label for="applicant-work-phone" class="col-form-label">Work Phone</label>
+                      <input type="text" id="applicant-work-phone" name="applicant-work-phone" class="form-control flat" />
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                    <label for="applicant-dob" class="col-form-label required">Date of Birth</label>
+                    <input type="text" id="applicant-dob" name="applicant-dob" class="form-control flat" />
+                </div>
+                <div class="form-group">
+                  <label for="applicant-ssn" class="col-form-label required">Social Security Number</label>
+                  <input type="text" id="applicant-ssn" name="applicant-ssn" class="form-control flat" />
+                </div>
+                <div class="form-group">
+                  <label for="applicant-email" class="col-form-label required">Email Address</label>
+                  <input type="text" id="applicant-email" name="applicant-email" class="form-control flat" />
+                </div>
+                <div class="form-group">
+                  <label for="applicant-dln" class="col-form-label required">Driver's License Number</label>
+                  <input type="text" id="applicant-dln" name="applicant-dln" class="form-control flat" />
+                </div>
+                <div class="form-group">
+                  <label for="applicant-dln-state" class="col-form-label required">State of Issue</label>
+                  <select id="applicant-dln-state" name="applicant-dln-state" class="form-control flat">
+                    <option></option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="applicant-number-dependents" class="col-form-label required">Number of Dependents</label>
+                  <select id="applicant-number-dependents" name="applicant-number-dependents" class="form-control flat">
+                    <option></option>
+                    <option>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="applicant-number-vehicles" class="col-form-label required">Number of Vehicles</label>
+                  <select id="applicant-number-vehicles" name="applicant-number-vehicles" class="form-control flat">
+                    <option></option>
+                    <option>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label class="col-form-label required">Current Employment Status</label>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="applicant-current-status-full-time" name="applicant-current-status" value="full time" />
+                    <label class="form-check-label" for="applicant-current-status-full-time">Full time</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="applicant-current-status-part-time" name="applicant-current-status" value="part time" />
+                    <label class="form-check-label" for="applicant-current-status-part-time">Part time</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="applicant-current-status-student" name="applicant-current-status" value="student" />
+                    <label class="form-check-label" for="applicant-current-status-student">Student</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="applicant-current-status-unemployed" name="applicant-current-status" value="unemployed" />
+                    <label class="form-check-label" for="applicant-current-status-unemployed">Unemployed</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="applicant-current-status-retired" name="applicant-current-status" value="retired" />
+                    <label class="form-check-label" for="applicant-current-status-retired">Retired</label>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="col-form-label">Other</label>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="applicant-other-previous-employer" name="other" value="yes" />
+                    <label class="form-check-label" for="applicant-other-previous-employer">I have a previous employer</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="applicant-other-co-applicant" name="other" value="yes" />
+                    <label class="form-check-label" for="applicant-other-co-applicant">I have a co-applicant</label>
+                  </div>
+                </div>             
+                <div class="form-group mt-4">
+                    <button id="btnNext" type="button" class="btn btn-next">NEXT</button>
+                </div>
+              </form>
+          </div>
+      </div>
+    </div>
+
+    <!-- Applicant Current Employment Information -->
+    <div class="container">
+      <div class="card card-form mb-5">
+          <div class="card-body">
+              <h2 class="card-title">APPLICANT EMPLOYMENT INFORMATION</h2>
+              <p class="form-legend">(<span class="text-required">*</span> indicates a required field)</p>
+              <form class="form">
+                <div class="form-group">
+                  <label for="applicant-current-employer" class="col-form-label required">Current Employer</label>
+                  <input type="text" id="applicant-current-employer" name="applicant-current-employer" class="form-control flat" />
+                </div>
+                <div class="form-group">
+                    <label for="applicant-current-occupation" class="col-form-label required">Occupation</label>
+                    <input type="text" id="applicant-current-occupation" name="applicant-current-occupation" class="form-control flat" />
+                </div>
+                <div class="form-group">
+                    <label for="applicant-current-employer-address" class="col-form-label required">Address</label>
+                    <input type="text" id="applicant-current-employer-address" name="applicant-current-employer-address" class="form-control flat" />
+                </div>
+                <div class="form-group">
+                    <label for="applicant-current-employer-city" class="col-form-label required">City</label>
+                    <input type="text" id="applicant-current-employer-city" name="applicant-current-employer-city" class="form-control flat" />
+                </div>
+                <div class="form-group">
+                  <label for="applicant-current-employer-state" class="col-form-label required">State</label>
+                  <select id="applicant-current-employer-state" name="applicant-current-employer-state" class="form-control flat">
+                    <option></option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="applicant-current-employer-zip" class="col-form-label required">Zip</label>
+                  <input type="text" id="applicant-current-employer-zip" name="applicant-current-employer-zip" class="form-control flat" />
+                </div>
+                <div class="form-group">
+                  <label for="applicant-current-employer-supervisor-name" class="col-form-label required">Supervisor Name</label>
+                  <input type="text" id="applicant-current-employer-supervisor-name" name="applicant-current-employer-supervisor-name" class="form-control flat" />
+                </div>
+                <div class="form-group">
+                    <label for="applicant-current-employer-supervisor-phone" class="col-form-label required">Supervisor Phone</label>
+                    <input type="text" id="applicant-current-employer-supervisor-phone" name="applicant-current-employer-supervisor-phone" class="form-control flat" />
+                </div>
+                <div class="form-group">
+                  <label for="applicant-current-employer-years-employed" class="col-form-label required">Years Employed</label>
+                  <input type="text" id="applicant-current-employer-years-employed" name="applicant-current-employer-years-employed" class="form-control flat" />
+                </div>
+                <div class="form-group">
+                  <label for="applicant-current-employer-monthly-income" class="col-form-label required">Monthly Income</label>
+                  <input type="text" id="applicant-current-employer-monthly-income" name="applicant-current-employer-monthly-income" class="form-control flat" />
+                </div>                           
+                <div class="form-group mt-4">
+                    <button id="btnBack" type="button" class="btn btn-back">BACK</button>
+                    <button id="btnNext" type="button" class="btn btn-next">NEXT</button>
+                </div>
+              </form>
+          </div>
+      </div>
+    </div>
+
+    <!-- Applicant Previous Employment Information -->
+    <div class="container">
+      <div class="card card-form mb-5">
+        <div class="card-body">
+            <h2 class="card-title">APPLICANT EMPLOYMENT INFORMATION</h2>
+            <p class="form-legend">(<span class="text-required">*</span> indicates a required field)</p>
+            <form class="form">
+              <div class="form-group">
+                <label for="applicant-previous-employer" class="col-form-label required">Previous Employer</label>
+                <input type="text" id="applicant-previous-employer" name="applicant-previous-employer" class="form-control flat" />
+              </div>
+              <div class="form-group">
+                  <label for="applicant-previous-occupation" class="col-form-label required">Occupation</label>
+                  <input type="text" id="applicant-previous-occupation" name="applicant-previous-occupation" class="form-control flat" />
+              </div>
+              <div class="form-group">
+                <label class="d-block col-form-label required">Status</label>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="applicant-previous-status" id="applicant-previous-status-full-time" value="full time">
+                  <label class="form-check-label" for="applicant-previous-status-full-time">Full time</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="applicant-previous-status" id="applicant-previous-status-part-time" value="part time">
+                  <label class="form-check-label" for="applicant-previous-status-part-time">Part time</label>
+                </div>
+              </div>
+              <div class="form-group">
+                  <label for="applicant-previous-employer-address" class="col-form-label required">Address</label>
+                  <input type="text" id="applicant-previous-employer-address" name="applicant-previous-employer-address" class="form-control flat" />
+              </div>
+              <div class="form-group">
+                  <label for="applicant-previous-employer-city" class="col-form-label required">City</label>
+                  <input type="text" id="applicant-previous-employer-city" name="applicant-previous-employer-city" class="form-control flat" />
+              </div>
+              <div class="form-group">
+                <label for="applicant-previous-employer-state" class="col-form-label required">State</label>
+                <select id="applicant-previous-employer-state" name="applicant-previous-employer-state" class="form-control flat">
+                  <option></option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="applicant-previous-employer-zip" class="col-form-label required">Zip</label>
+                <input type="text" id="applicant-previous-employer-zip" name="applicant-previous-employer-zip" class="form-control flat" />
+              </div>
+              <div class="form-group">
+                <label for="applicant-previous-employer-supervisor-name" class="col-form-label required">Supervisor Name</label>
+                <input type="text" id="applicant-previous-employer-supervisor-name" name="applicant-previous-employer-supervisor-name" class="form-control flat" />
+              </div>
+              <div class="form-group">
+                  <label for="applicant-previous-employer-supervisor-phone" class="col-form-label required">Supervisor Phone</label>
+                  <input type="text" id="applicant-previous-employer-supervisor-phone" name="applicant-previous-employer-supervisor-phone" class="form-control flat" />
+              </div>
+              <div class="form-group">
+                <label for="applicant-previous-employer-years-employed" class="col-form-label required">Years Employed</label>
+                <input type="text" id="applicant-previous-employer-years-employed" name="applicant-previous-employer-years-employed" class="form-control flat" />
+              </div>
+              <div class="form-group">
+                <label for="applicant-previous-employer-monthly-income" class="col-form-label required">Monthly Income</label>
+                <input type="text" id="applicant-previous-employer-monthly-income" name="applicant-previous-employer-monthly-income" class="form-control flat" />
+              </div>                           
+              <div class="form-group mt-4">
+                  <button id="btnBack" type="button" class="btn btn-back">BACK</button>
+                  <button id="btnNext" type="button" class="btn btn-next">NEXT</button>
+              </div>
+            </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Applicant Credit History -->
+    <div class="container">
+      <div class="card card-form mb-5">
+        <div class="card-body">
+            <h2 class="card-title">APPLICANT CREDIT HISTORY</h2>
+            <p class="form-legend">(<span class="text-required">*</span> indicates a required field)</p>
+            <form class="form">
+              <div class="form-group">
+                <label class="d-block col-form-label required">Declared bankruptcy in past 7 years?</label>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="applicant-credit-history-bankruptcy" id="applicant-credit-history-bankruptcy-yes" value="yes">
+                  <label class="form-check-label" for="applicant-credit-history-bankruptcy-yes">Yes</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="applicant-credit-history-bankruptcy" id="applicant-credit-history-bankruptcy-no" value="no">
+                  <label class="form-check-label" for="applicant-credit-history-bankruptcy-no">No</label>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="d-block col-form-label required">Evicted from a rental residence?</label>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="applicant-credit-history-evicted" id="applicant-credit-history-evicted-yes" value="yes">
+                  <label class="form-check-label" for="applicant-credit-history-evicted-yes">Yes</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="applicant-credit-history-evicted" id="applicant-credit-history-evicted-no" value="no">
+                  <label class="form-check-label" for="applicant-credit-history-evicted-no">No</label>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="d-block col-form-label required">Two or more late rental payments in last year?</label>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="applicant-credit-history-late-payments" id="applicant-credit-history-late-payments-yes" value="yes">
+                  <label class="form-check-label" for="applicant-credit-history-late-payments-yes">Yes</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="applicant-credit-history-late-payments" id="applicant-credit-history-late-payments-no" value="no">
+                  <label class="form-check-label" for="applicant-credit-history-late-payments-no">No</label>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="d-block col-form-label required">Convicted of a crime?</label>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="applicant-credit-history-conviction" id="applicant-credit-history-conviction-yes" value="yes">
+                  <label class="form-check-label" for="applicant-credit-history-conviction-yes">Yes</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="applicant-credit-history-conviction" id="applicant-credit-history-conviction-no" value="no">
+                  <label class="form-check-label" for="applicant-credit-history-conviction-no">No</label>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="applicant-credit-history-explain-yes" class="col-form-label required">Explain any &quot;yes&quot; listed above</label>
+                <textarea id="applicant-credit-history-explain-yes" name="applicant-credit-history-explain-yes" class="form-control flat"></textarea>
+              </div>                  
+              <div class="form-group mt-4">
+                  <button id="btnBack" type="button" class="btn btn-back">BACK</button>
+                  <button id="btnNext" type="button" class="btn btn-next">NEXT</button>
+              </div>
+            </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Co-Applicant Information -->
+    <div class="container">
+      <div class="card card-form mb-5">
+          <div class="card-body">
+              <h2 class="card-title">CO-APPLICANT INFORMATION</h2>
+              <p class="form-legend">(<span class="text-required">*</span> indicates a required field)</p>
+              <form class="form">
+                <div class="form-group">
+                    <label for="co-applicant-first-name" class="col-form-label required">First Name</label>
+                    <input type="text" id="co-applicant-first-name" name="co-applicant-first-name" class="form-control flat" />
+                </div>
+                <div class="form-group">
+                    <label for="co-applicant-middle-name" class="col-form-label">Middle Name</label>
+                    <input type="text" id="co-applicant-middle-name" name="co-applicant-middle-name" class="form-control flat" />
+                </div>
+                <div class="form-group">
+                    <label for="co-applicant-last-name" class="col-form-label required">Last Name</label>
+                    <input type="text" id="co-applicant-last-name" name="co-applicant-last-name" class="form-control flat" />
+                </div>
+                <div class="inner-card">
+                  <div class="inner-card-title form-group">
+                      <label class="col-form-label required">Phone Number</label>
+                  </div>
+                  <div class="inner-card-body">
+                    <div class="form-group">
+                      <label for="co-applicant-home-phone" class="col-form-label">Home Phone</label>
+                      <input type="text" id="co-applicant-home-phone" name="co-applicant-home-phone" class="form-control flat" />
+                    </div>
+                    <div class="form-group">
+                      <label for="co-applicant-cell-phone" class="col-form-label">Cell Phone</label>
+                      <input type="text" id="co-applicant-cell-phone" name="co-applicant-cell-phone" class="form-control flat" />
+                    </div>
+                    <div class="form-group">
+                      <label for="co-applicant-work-phone" class="col-form-label">Work Phone</label>
+                      <input type="text" id="co-applicant-work-phone" name="co-applicant-work-phone" class="form-control flat" />
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                    <label for="co-applicant-dob" class="col-form-label required">Date of Birth</label>
+                    <input type="text" id="co-applicant-dob" name="co-applicant-dob" class="form-control flat" />
+                </div>
+                <div class="form-group">
+                  <label for="co-applicant-ssn" class="col-form-label required">Social Security Number</label>
+                  <input type="text" id="co-applicant-ssn" name="co-applicant-ssn" class="form-control flat" />
+                </div>
+                <div class="form-group">
+                  <label for="co-applicant-email" class="col-form-label required">Email Address</label>
+                  <input type="text" id="co-applicant-email" name="co-applicant-email" class="form-control flat" />
+                </div>
+                <div class="form-group">
+                  <label for="co-applicant-dln" class="col-form-label required">Driver's License Number</label>
+                  <input type="text" id="co-applicant-dln" name="co-applicant-dln" class="form-control flat" />
+                </div>
+                <div class="form-group">
+                  <label for="co-applicant-dln-state" class="col-form-label required">State of Issue</label>
+                  <select id="co-applicant-dln-state" name="co-applicant-dln-state" class="form-control flat">
+                    <option></option>
+                  </select>
+                </div>                
+                <div class="form-group">
+                  <label class="col-form-label required">Current Employment Status</label>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="co-applicant-current-status-full-time" name="co-applicant-current-status" value="full time" />
+                    <label class="form-check-label" for="co-applicant-current-status-full-time">Full time</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="co-applicant-current-status-part-time" name="co-applicant-current-status" value="part time" />
+                    <label class="form-check-label" for="co-applicant-current-status-part-time">Part time</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="co-applicant-current-status-student" name="co-applicant-current-status" value="student" />
+                    <label class="form-check-label" for="co-applicant-current-status-student">Student</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="co-applicant-current-status-unemployed" name="co-applicant-current-status" value="unemployed" />
+                    <label class="form-check-label" for="co-applicant-current-status-unemployed">Unemployed</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="co-applicant-current-status-retired" name="co-applicant-current-status" value="retired" />
+                    <label class="form-check-label" for="co-applicant-current-status-retired">Retired</label>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="col-form-label">Other</label>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="co-applicant-other-previous-employer" name="other" value="yes" />
+                    <label class="form-check-label" for="co-applicant-other-previous-employer">Has a previous employer</label>
+                  </div>
+                </div>             
+                <div class="form-group mt-4">
+                  <button id="btnBack" type="button" class="btn btn-back">BACK</button>
+                  <button id="btnNext" type="button" class="btn btn-next">NEXT</button>
+                </div>
+              </form>
+          </div>
+      </div>
+    </div>
+
+    <!-- Co-Applicant Current Employment Information -->
+    <div class="container">
+      <div class="card card-form mb-5">
+          <div class="card-body">
+              <h2 class="card-title">CO-APPLICANT EMPLOYMENT INFORMATION</h2>
+              <p class="form-legend">(<span class="text-required">*</span> indicates a required field)</p>
+              <form class="form">
+                <div class="form-group">
+                  <label for="co-applicant-current-employer" class="col-form-label required">Current Employer</label>
+                  <input type="text" id="co-applicant-current-employer" name="co-applicant-current-employer" class="form-control flat" />
+                </div>
+                <div class="form-group">
+                    <label for="co-applicant-current-occupation" class="col-form-label required">Occupation</label>
+                    <input type="text" id="co-applicant-current-occupation" name="co-applicant-current-occupation" class="form-control flat" />
+                </div>
+                <div class="form-group">
+                    <label for="co-applicant-current-employer-address" class="col-form-label required">Address</label>
+                    <input type="text" id="co-applicant-current-employer-address" name="co-applicant-current-employer-address" class="form-control flat" />
+                </div>
+                <div class="form-group">
+                    <label for="co-applicant-current-employer-city" class="col-form-label required">City</label>
+                    <input type="text" id="co-applicant-current-employer-city" name="co-applicant-current-employer-city" class="form-control flat" />
+                </div>
+                <div class="form-group">
+                  <label for="co-applicant-current-employer-state" class="col-form-label required">State</label>
+                  <select id="co-applicant-current-employer-state" name="co-applicant-current-employer-state" class="form-control flat">
+                    <option></option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="co-applicant-current-employer-zip" class="col-form-label required">Zip</label>
+                  <input type="text" id="co-applicant-current-employer-zip" name="co-applicant-current-employer-zip" class="form-control flat" />
+                </div>
+                <div class="form-group">
+                  <label for="co-applicant-current-employer-supervisor-name" class="col-form-label required">Supervisor Name</label>
+                  <input type="text" id="co-applicant-current-employer-supervisor-name" name="co-applicant-current-employer-supervisor-name" class="form-control flat" />
+                </div>
+                <div class="form-group">
+                    <label for="co-applicant-current-employer-supervisor-phone" class="col-form-label required">Supervisor Phone</label>
+                    <input type="text" id="co-applicant-current-employer-supervisor-phone" name="co-applicant-current-employer-supervisor-phone" class="form-control flat" />
+                </div>
+                <div class="form-group">
+                  <label for="co-applicant-current-employer-years-employed" class="col-form-label required">Years Employed</label>
+                  <input type="text" id="co-applicant-current-employer-years-employed" name="co-applicant-current-employer-years-employed" class="form-control flat" />
+                </div>
+                <div class="form-group">
+                  <label for="co-applicant-current-employer-monthly-income" class="col-form-label required">Monthly Income</label>
+                  <input type="text" id="co-applicant-current-employer-monthly-income" name="co-applicant-current-employer-monthly-income" class="form-control flat" />
+                </div>                           
+                <div class="form-group mt-4">
+                    <button id="btnBack" type="button" class="btn btn-back">BACK</button>
+                    <button id="btnNext" type="button" class="btn btn-next">NEXT</button>
+                </div>
+              </form>
+          </div>
+      </div>
+    </div>
+
+    <!-- Co-Applicant Previous Employment Information -->
+    <div class="container">
+      <div class="card card-form mb-5">
+        <div class="card-body">
+            <h2 class="card-title">CO-APPLICANT EMPLOYMENT INFORMATION</h2>
+            <p class="form-legend">(<span class="text-required">*</span> indicates a required field)</p>
+            <form class="form">
+              <div class="form-group">
+                <label for="co-applicant-previous-employer" class="col-form-label required">Previous Employer</label>
+                <input type="text" id="co-applicant-previous-employer" name="co-applicant-previous-employer" class="form-control flat" />
+              </div>
+              <div class="form-group">
+                  <label for="co-applicant-previous-occupation" class="col-form-label required">Occupation</label>
+                  <input type="text" id="co-applicant-previous-occupation" name="co-applicant-previous-occupation" class="form-control flat" />
+              </div>
+              <div class="form-group">
+                <label class="d-block col-form-label required">Status</label>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="co-applicant-previous-status" id="co-applicant-previous-status-full-time" value="full time">
+                  <label class="form-check-label" for="co-applicant-previous-status-full-time">Full time</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="co-applicant-previous-status" id="co-applicant-previous-status-part-time" value="part time">
+                  <label class="form-check-label" for="co-applicant-previous-status-part-time">Part time</label>
+                </div>
+              </div>
+              <div class="form-group">
+                  <label for="co-applicant-previous-employer-address" class="col-form-label required">Address</label>
+                  <input type="text" id="co-applicant-previous-employer-address" name="co-applicant-previous-employer-address" class="form-control flat" />
+              </div>
+              <div class="form-group">
+                  <label for="co-applicant-previous-employer-city" class="col-form-label required">City</label>
+                  <input type="text" id="co-applicant-previous-employer-city" name="co-applicant-previous-employer-city" class="form-control flat" />
+              </div>
+              <div class="form-group">
+                <label for="co-applicant-previous-employer-state" class="col-form-label required">State</label>
+                <select id="co-applicant-previous-employer-state" name="co-applicant-previous-employer-state" class="form-control flat">
+                  <option></option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="co-applicant-previous-employer-zip" class="col-form-label required">Zip</label>
+                <input type="text" id="co-applicant-previous-employer-zip" name="co-applicant-previous-employer-zip" class="form-control flat" />
+              </div>
+              <div class="form-group">
+                <label for="co-applicant-previous-employer-supervisor-name" class="col-form-label required">Supervisor Name</label>
+                <input type="text" id="co-applicant-previous-employer-supervisor-name" name="co-applicant-previous-employer-supervisor-name" class="form-control flat" />
+              </div>
+              <div class="form-group">
+                  <label for="co-applicant-previous-employer-supervisor-phone" class="col-form-label required">Supervisor Phone</label>
+                  <input type="text" id="co-applicant-previous-employer-supervisor-phone" name="co-applicant-previous-employer-supervisor-phone" class="form-control flat" />
+              </div>
+              <div class="form-group">
+                <label for="co-applicant-previous-employer-years-employed" class="col-form-label required">Years Employed</label>
+                <input type="text" id="co-applicant-previous-employer-years-employed" name="co-applicant-previous-employer-years-employed" class="form-control flat" />
+              </div>
+              <div class="form-group">
+                <label for="co-applicant-previous-employer-monthly-income" class="col-form-label required">Monthly Income</label>
+                <input type="text" id="co-applicant-previous-employer-monthly-income" name="co-applicant-previous-employer-monthly-income" class="form-control flat" />
+              </div>                           
+              <div class="form-group mt-4">
+                  <button id="btnBack" type="button" class="btn btn-back">BACK</button>
+                  <button id="btnNext" type="button" class="btn btn-next">NEXT</button>
+              </div>
+            </form>
+        </div>
+      </div>
+    </div>
+
+      <!-- Co-Applicant Credit History -->
+    <div class="container">
+      <div class="card card-form mb-5">
+        <div class="card-body">
+            <h2 class="card-title">CO-APPLICANT CREDIT HISTORY</h2>
+            <p class="form-legend">(<span class="text-required">*</span> indicates a required field)</p>
+            <form class="form">
+              <div class="form-group">
+                <label class="d-block col-form-label required">Declared bankruptcy in past 7 years?</label>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="co-applicant-credit-history-bankruptcy" id="co-applicant-credit-history-bankruptcy-yes" value="yes">
+                  <label class="form-check-label" for="co-applicant-credit-history-bankruptcy-yes">Yes</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="co-applicant-credit-history-bankruptcy" id="co-applicant-credit-history-bankruptcy-no" value="no">
+                  <label class="form-check-label" for="co-applicant-credit-history-bankruptcy-no">No</label>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="d-block col-form-label required">Evicted from a rental residence?</label>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="co-applicant-credit-history-evicted" id="co-applicant-credit-history-evicted-yes" value="yes">
+                  <label class="form-check-label" for="co-applicant-credit-history-evicted-yes">Yes</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="co-applicant-credit-history-evicted" id="co-applicant-credit-history-evicted-no" value="no">
+                  <label class="form-check-label" for="co-applicant-credit-history-evicted-no">No</label>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="d-block col-form-label required">Two or more late rental payments in last year?</label>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="co-applicant-credit-history-late-payments" id="co-applicant-credit-history-late-payments-yes" value="yes">
+                  <label class="form-check-label" for="co-applicant-credit-history-late-payments-yes">Yes</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="co-applicant-credit-history-late-payments" id="co-applicant-credit-history-late-payments-no" value="no">
+                  <label class="form-check-label" for="co-applicant-credit-history-late-payments-no">No</label>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="d-block col-form-label required">Convicted of a crime?</label>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="co-applicant-credit-history-conviction" id="co-applicant-credit-history-conviction-yes" value="yes">
+                  <label class="form-check-label" for="co-applicant-credit-history-conviction-yes">Yes</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="co-applicant-credit-history-conviction" id="co-applicant-credit-history-conviction-no" value="no">
+                  <label class="form-check-label" for="co-applicant-credit-history-conviction-no">No</label>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="co-applicant-credit-history-explain-yes" class="col-form-label required">Explain any &quot;yes&quot; listed above</label>
+                <textarea id="co-applicant-credit-history-explain-yes" name="co-applicant-credit-history-explain-yes" class="form-control flat"></textarea>
+              </div>                  
+              <div class="form-group mt-4">
+                  <button id="btnBack" type="button" class="btn btn-back">BACK</button>
+                  <button id="btnNext" type="button" class="btn btn-next">NEXT</button>
+              </div>
+            </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Dependents -->
+    <div class="container">
+      <div class="card card-form mb-5">
+          <div class="card-body">
+              <h2 class="card-title">DEPENDENTS</h2>
+              <p class="form-legend">(<span class="text-required">*</span> indicates a required field)</p>
+              <form class="form">
+                <div class="inner-card">
+                  <div class="inner-card-title form-group">
+                      <label class="col-form-label">DEPENDENT 1</label>
+                  </div>
+                  <div class="inner-card-body">
+                    <div class="form-group">
+                      <label for="dependent-name-1" class="col-form-label required">Name</label>
+                      <input type="text" id="dependent-name-1" name="dependent-name-1" class="form-control flat" />
+                    </div>
+                    <div class="form-group">
+                      <label for="dependent-dob-1" class="col-form-label required">Date of Birth</label>
+                      <input type="text" id="dependent-dob-1" name="dependent-dob-1" class="form-control flat" />
+                    </div>
+                  </div>
+                </div>
+                <div class="inner-card">
+                  <div class="inner-card-title form-group">
+                      <label class="col-form-label">DEPENDENT 2</label>
+                  </div>
+                  <div class="inner-card-body">
+                    <div class="form-group">
+                      <label for="dependent-name-2" class="col-form-label required">Name</label>
+                      <input type="text" id="dependent-name-2" name="dependent-name-2" class="form-control flat" />
+                    </div>
+                    <div class="form-group">
+                      <label for="dependent-dob-2" class="col-form-label required">Date of Birth</label>
+                      <input type="text" id="dependent-dob-2" name="dependent-dob-2" class="form-control flat" />
+                    </div>
+                  </div>
+                </div>
+                <div class="inner-card">
+                  <div class="inner-card-title form-group">
+                      <label class="col-form-label">DEPENDENT 3</label>
+                  </div>
+                  <div class="inner-card-body">
+                    <div class="form-group">
+                      <label for="dependent-name-3" class="col-form-label required">Name</label>
+                      <input type="text" id="dependent-name-3" name="dependent-name-3" class="form-control flat" />
+                    </div>
+                    <div class="form-group">
+                      <label for="dependent-dob-3" class="col-form-label required">Date of Birth</label>
+                      <input type="text" id="dependent-dob-3" name="dependent-dob-3" class="form-control flat" />
+                    </div>
+                  </div>
+                </div>
+                <div class="inner-card">
+                  <div class="inner-card-title form-group">
+                      <label class="col-form-label">DEPENDENT 4</label>
+                  </div>
+                  <div class="inner-card-body">
+                    <div class="form-group">
+                      <label for="dependent-name-4" class="col-form-label required">Name</label>
+                      <input type="text" id="dependent-name-4" name="dependent-name-4" class="form-control flat" />
+                    </div>
+                    <div class="form-group">
+                      <label for="dependent-dob-4" class="col-form-label required">Date of Birth</label>
+                      <input type="text" id="dependent-dob-4" name="dependent-dob-4" class="form-control flat" />
+                    </div>
+                  </div>
+                </div>                                        
+                <div class="form-group mt-4">
+                  <button id="btnBack" type="button" class="btn btn-back">BACK</button>
+                  <button id="btnNext" type="button" class="btn btn-next">NEXT</button>
+                </div>
+              </form>
+          </div>
+      </div>
+    </div>
+
+    <!-- Residential History, Current Residence -->
+    <div class="container">
+      <div class="card card-form mb-5">
+        <div class="card-body">
+            <h2 class="card-title">RESIDENTIAL HISTORY</h2>
+            <p class="form-legend">(<span class="text-required">*</span> indicates a required field)</p>
+            <form class="form">
+              <div class="form-group">
+                <label for="current-address" class="col-form-label required">Current Residence Street Address</label>
+                <input type="text" id="current-address" name="current-address" class="form-control flat" />
+              </div>
+              <div class="form-group">
+                  <label for="current-city" class="col-form-label required">City</label>
+                  <input type="text" id="current-city" name="current-city" class="form-control flat" />
+              </div>
+              <div class="form-group">
+                <label for="current-state" class="col-form-label required">State</label>
+                <select id="current-state" name="current-state" class="form-control flat">
+                  <option></option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="current-zip" class="col-form-label required">Zip</label>
+                <input type="text" id="current-zip" name="current-zip" class="form-control flat" />
+              </div>
+              <div class="form-group">
+                <label for="current-monthly-payment" class="col-form-label required">Monthly Payment</label>
+                <input type="text" id="current-monthly-payment" name="current-monthly-payment" class="form-control flat" />
+              </div>
+              <div class="form-group">
+                <label class="d-block col-form-label required">Are you renting this property?</label>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="current-residence" id="current-residence-rent" value="rent">
+                  <label class="form-check-label" for="current-residence-rent">Rent</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="current-residence" id="current-residence-own" value="own">
+                  <label class="form-check-label" for="current-residence-own">Own</label>
+                </div>
+              </div>
+              <div class="form-group">
+                  <label for="current-landlord-name" class="col-form-label required">Landlord/Mortgagee Name</label>
+                  <input type="text" id="current-landlord-name" name="current-landlord-name" class="form-control flat" />
+              </div>
+              <div class="form-group">
+                  <label for="current-landlord-phone" class="col-form-label required">Landlord/Mortgagee Phone</label>
+                  <input type="text" id="current-landlord-phone" name="current-landlord-phone" class="form-control flat" />
+              </div>
+              <div class="form-group">
+                <label for="current-reason-leaving" class="col-form-label required">Reason for Leaving</label>
+                <textarea id="current-reason-leaving" name="current-reason-leaving" class="form-control flat"></textarea>
+              </div>
+              <div class="form-group">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="has-previous-residence" name="other" value="yes" />
+                  <label class="form-check-label" for="has-previous-residence">I have a previous residence</label>
+                </div>
+              </div>                                       
+              <div class="form-group mt-4">
+                  <button id="btnBack" type="button" class="btn btn-back">BACK</button>
+                  <button id="btnNext" type="button" class="btn btn-next">NEXT</button>
+              </div>
+            </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Residential History, Previous Residence -->
+    <div class="container">
+      <div class="card card-form mb-5">
+        <div class="card-body">
+            <h2 class="card-title">RESIDENTIAL HISTORY</h2>
+            <p class="form-legend">(<span class="text-required">*</span> indicates a required field)</p>
+            <form class="form">
+              <div class="form-group">
+                <label for="previous-address" class="col-form-label required">Previous Residence Street Address</label>
+                <input type="text" id="previous-address" name="previous-address" class="form-control flat" />
+              </div>
+              <div class="form-group">
+                  <label for="previous-city" class="col-form-label required">City</label>
+                  <input type="text" id="previous-city" name="previous-city" class="form-control flat" />
+              </div>
+              <div class="form-group">
+                <label for="previous-state" class="col-form-label required">State</label>
+                <select id="previous-state" name="previous-state" class="form-control flat">
+                  <option></option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="previous-zip" class="col-form-label required">Zip</label>
+                <input type="text" id="previous-zip" name="previous-zip" class="form-control flat" />
+              </div>
+              <div class="form-group">
+                <label for="previous-monthly-payment" class="col-form-label required">Monthly Payment</label>
+                <input type="text" id="previous-monthly-payment" name="previous-monthly-payment" class="form-control flat" />
+              </div>
+              <div class="form-group">
+                <label class="d-block col-form-label required">Were you renting this property?</label>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="previous-residence" id="previous-residence-rent" value="rent">
+                  <label class="form-check-label" for="previous-residence-rent">Rent</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="previous-residence" id="previous-residence-own" value="own">
+                  <label class="form-check-label" for="previous-residence-own">Own</label>
+                </div>
+              </div>
+              <div class="form-group">
+                  <label for="previous-landlord-name" class="col-form-label required">Landlord/Mortgagee Name</label>
+                  <input type="text" id="previous-landlord-name" name="previous-landlord-name" class="form-control flat" />
+              </div>
+              <div class="form-group">
+                  <label for="previous-landlord-phone" class="col-form-label required">Landlord/Mortgagee Phone</label>
+                  <input type="text" id="previous-landlord-phone" name="previous-landlord-phone" class="form-control flat" />
+              </div>
+              <div class="form-group">
+                <label for="previous-reason-leaving" class="col-form-label required">Reason for Leaving</label>
+                <textarea id="previous-reason-leaving" name="previous-reason-leaving" class="form-control flat"></textarea>
+              </div>                                 
+              <div class="form-group mt-4">
+                  <button id="btnBack" type="button" class="btn btn-back">BACK</button>
+                  <button id="btnNext" type="button" class="btn btn-next">NEXT</button>
+              </div>
+            </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Personal References -->
+    <div class="container">
+      <div class="card card-form mb-5">
+          <div class="card-body">
+              <h2 class="card-title">PERSONAL REFERENCES</h2>
+              <p class="form-legend">(<span class="text-required">*</span> indicates a required field)</p>
+              <form class="form">
+                <div class="inner-card">
+                  <div class="inner-card-title form-group">
+                      <label class="col-form-label">REFERENCE 1</label>
+                  </div>
+                  <div class="inner-card-body">
+                    <div class="form-group">
+                      <label for="personal-references-name-1" class="col-form-label required">Name</label>
+                      <input type="text" id="personal-references-name-1" name="personal-references-name-1" class="form-control flat" />
+                    </div>
+                    <div class="form-group">
+                      <label for="personal-references-phone-1" class="col-form-label required">Phone</label>
+                      <input type="text" id="personal-references-phone-1" name="personal-references-phone-1" class="form-control flat" />
+                    </div>
+                    <div class="form-group">
+                      <label for="personal-references-relationship-1" class="col-form-label required">Relationship</label>
+                      <input type="text" id="personal-references-relationship-1" name="personal-references-relationship-1" class="form-control flat" />
+                    </div>
+                    <div class="form-group">
+                      <label for="personal-references-years-known-1" class="col-form-label required">Years Known</label>
+                      <input type="text" id="personal-references-years-known-1" name="personal-references-years-known-1" class="form-control flat" />
+                    </div>
+                    <div class="form-group">
+                      <label for="personal-references-address-1" class="col-form-label required">Address</label>
+                      <input type="text" id="personal-references-address-1" name="personal-references-address-1" class="form-control flat" />
+                    </div>
+                  </div>
+                </div>
+                <div class="inner-card">
+                  <div class="inner-card-title form-group">
+                      <label class="col-form-label">REFERENCE 2</label>
+                  </div>
+                  <div class="inner-card-body">
+                    <div class="form-group">
+                      <label for="personal-references-name-2" class="col-form-label required">Name</label>
+                      <input type="text" id="personal-references-name-2" name="personal-references-name-2" class="form-control flat" />
+                    </div>
+                    <div class="form-group">
+                      <label for="personal-references-phone-2" class="col-form-label required">Phone</label>
+                      <input type="text" id="personal-references-phone-2" name="personal-references-phone-2" class="form-control flat" />
+                    </div>
+                    <div class="form-group">
+                      <label for="personal-references-relationship-2" class="col-form-label required">Relationship</label>
+                      <input type="text" id="personal-references-relationship-2" name="personal-references-relationship-2" class="form-control flat" />
+                    </div>
+                    <div class="form-group">
+                      <label for="personal-references-years-known-2" class="col-form-label required">Years Known</label>
+                      <input type="text" id="personal-references-years-known-2" name="personal-references-years-known-2" class="form-control flat" />
+                    </div>
+                    <div class="form-group">
+                      <label for="personal-references-address-2" class="col-form-label required">Address</label>
+                      <input type="text" id="personal-references-address-2" name="personal-references-address-2" class="form-control flat" />
+                    </div>
+                  </div>
+                </div>
+                <div class="inner-card">
+                  <div class="inner-card-title form-group">
+                      <label class="col-form-label">REFERENCE 3</label>
+                  </div>
+                  <div class="inner-card-body">
+                    <div class="form-group">
+                      <label for="personal-references-name-3" class="col-form-label required">Name</label>
+                      <input type="text" id="personal-references-name-3" name="personal-references-name-3" class="form-control flat" />
+                    </div>
+                    <div class="form-group">
+                      <label for="personal-references-phone-3" class="col-form-label required">Phone</label>
+                      <input type="text" id="personal-references-phone-3" name="personal-references-phone-3" class="form-control flat" />
+                    </div>
+                    <div class="form-group">
+                      <label for="personal-references-relationship-3" class="col-form-label required">Relationship</label>
+                      <input type="text" id="personal-references-relationship-3" name="personal-references-relationship-3" class="form-control flat" />
+                    </div>
+                    <div class="form-group">
+                      <label for="personal-references-years-known-3" class="col-form-label required">Years Known</label>
+                      <input type="text" id="personal-references-years-known-3" name="personal-references-years-known-3" class="form-control flat" />
+                    </div>
+                    <div class="form-group">
+                      <label for="personal-references-address-3" class="col-form-label required">Address</label>
+                      <input type="text" id="personal-references-address-3" name="personal-references-address-3" class="form-control flat" />
+                    </div>
+                  </div>
+                </div>                             
+                <div class="form-group mt-4">
+                  <button id="btnBack" type="button" class="btn btn-back">BACK</button>
+                  <button id="btnNext" type="button" class="btn btn-next">NEXT</button>
+                </div>
+              </form>
+          </div>
+      </div>
+    </div>
+
+    <!-- Emergency Contact -->
+    <div class="container">
+      <div class="card card-form mb-5">
+        <div class="card-body">
+            <h2 class="card-title">EMERGENCY CONTACT</h2>
+            <p class="form-legend">(<span class="text-required">*</span> indicates a required field)</p>
+            <form class="form">
+              <div class="form-group">
+                <label for="emergency-contact-name" class="col-form-label required">Name</label>
+                <input type="text" id="emergency-contact-name" name="emergency-contact-name" class="form-control flat" />
+              </div>
+              <div class="form-group">
+                <label for="emergency-contact-phone" class="col-form-label required">Phone</label>
+                <input type="text" id="emergency-contact-phone" name="emergency-contact-phone" class="form-control flat" />
+              </div>
+              <div class="form-group">
+                <label for="emergency-contact-relationship" class="col-form-label required">Relationship</label>
+                <input type="text" id="emergency-contact-relationship" name="emergency-contact-relationship" class="form-control flat" />
+              </div>
+              <div class="form-group">
+                <label for="emergency-contact-address" class="col-form-label required">Address</label>
+                <input type="text" id="emergency-contact-address" name="emergency-contact-address" class="form-control flat" />
+              </div>                             
+              <div class="form-group mt-4">
+                <button id="btnBack" type="button" class="btn btn-back">BACK</button>
+                <button id="btnNext" type="button" class="btn btn-next">NEXT</button>
+              </div>
+            </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Vehicle Information -->
+    <div class="container">
+      <div class="card card-form mb-5">
+          <div class="card-body">
+              <h2 class="card-title">VEHICLE INFORMATION</h2>
+              <p class="form-legend">(<span class="text-required">*</span> indicates a required field)</p>
+              <form class="form">
+                <div class="inner-card">
+                  <div class="inner-card-title form-group">
+                      <label class="col-form-label">VEHICLE 1</label>
+                  </div>
+                  <div class="inner-card-body">
+                    <div class="form-group">
+                      <label for="vehicle-make-1" class="col-form-label required">Make</label>
+                      <input type="text" id="vehicle-make-1" name="vehicle-make-1" class="form-control flat" />
+                    </div>
+                    <div class="form-group">
+                      <label for="vehicle-model-1" class="col-form-label required">Model</label>
+                      <input type="text" id="vehicle-model-1" name="vehicle-model-1" class="form-control flat" />
+                    </div>
+                    <div class="form-group">
+                      <label for="vehicle-color-1" class="col-form-label required">Color</label>
+                      <input type="text" id="vehicle-color-1" name="vehicle-color-1" class="form-control flat" />
+                    </div>
+                    <div class="form-group">
+                      <label for="vehicle-year-1" class="col-form-label required">Year</label>
+                      <select id="vehicle-year-1" name="vehicle-year-1" class="form-control flat">
+                        <option></option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="vehicle-license-plate-number-1" class="col-form-label required">License Plate Number</label>
+                      <input type="text" id="vehicle-license-plate-number-1" name="vehicle-license-plate-number-1" class="form-control flat" />
+                    </div>
+                    <div class="form-group">
+                      <label for="vehicle-license-plate-state-1" class="col-form-label required">License Plate State</label>
+                      <select id="vehicle-license-plate-state-1" name="vehicle-license-plate-state-1" class="form-control flat">
+                        <option></option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="inner-card">
+                  <div class="inner-card-title form-group">
+                    <label class="col-form-label">VEHICLE 2</label>
+                  </div>
+                  <div class="inner-card-body">
+                    <div class="form-group">
+                      <label for="vehicle-make-2" class="col-form-label required">Make</label>
+                      <input type="text" id="vehicle-make-2" name="vehicle-make-2" class="form-control flat" />
+                    </div>
+                    <div class="form-group">
+                      <label for="vehicle-model-2" class="col-form-label required">Model</label>
+                      <input type="text" id="vehicle-model-2" name="vehicle-model-2" class="form-control flat" />
+                    </div>
+                    <div class="form-group">
+                      <label for="vehicle-color-2" class="col-form-label required">Color</label>
+                      <input type="text" id="vehicle-color-2" name="vehicle-color-2" class="form-control flat" />
+                    </div>
+                    <div class="form-group">
+                      <label for="vehicle-year-2" class="col-form-label required">Year</label>
+                      <select id="vehicle-year-2" name="vehicle-year-2" class="form-control flat">
+                        <option></option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="vehicle-license-plate-number-2" class="col-form-label required">License Plate Number</label>
+                      <input type="text" id="vehicle-license-plate-number-2" name="vehicle-license-plate-number-2" class="form-control flat" />
+                    </div>
+                    <div class="form-group">
+                      <label for="vehicle-license-plate-state-2" class="col-form-label required">License Plate State</label>
+                      <select id="vehicle-license-plate-state-2" name="vehicle-license-plate-state-2" class="form-control flat">
+                        <option></option>
+                      </select>
+                    </div>
+                  </div>
+                </div>                      
+                <div class="form-group mt-4">
+                  <button id="btnBack" type="button" class="btn btn-back">BACK</button>
+                  <button id="btnNext" type="button" class="btn btn-next">NEXT</button>
+                </div>
+              </form>
+          </div>
+      </div>
+    </div>
+
+    <!-- Additional Information -->
+    <div class="container">
+      <div class="card card-form mb-5">
+          <div class="card-body">
+              <h2 class="card-title">ADDITIONAL INFORMATION</h2>
+              <p class="form-legend">(<span class="text-required">*</span> indicates a required field)</p>
+              <form class="form">
+                <div class="form-group">
+                  <Label for="additional-information" class="col-form-label">Anything to help the owner evaluate this application</Label>
+                  <textarea id="additional-information" name="additional-information" class="form-control flat"></textarea>
+                </div>
+                <div class="form-group">
+                  <label for="applicant-signature" class="col-form-label required">Applicant Signature</label>
+                  <input type="text" id="applicant-signature" name="applicant-signature" class="form-control flat" />
+                </div>
+                <div class="form-group">
+                  <label for="co-applicant-signature" class="col-form-label required">Co-Applicant Signature</label>
+                  <input type="text" id="co-applicant-signature" name="co-applicant-signature" class="form-control flat" />
+                </div>                     
+                <div class="form-group mt-4">
+                  <button id="btnBack" type="button" class="btn btn-back">Back</button>
+                  <button id="btnSubmit" type="button" class="btn btn-next">Submit</button>
+                </div>
+              </form>
+          </div>
+      </div>
+    </div>
+
+    <div class="flex-grow-1"></div>
+
+    <footer class="footer">
+      <div class="container footer-container">
+        <div class="footer-item">
+          <div>&copy; H&amp;H Properties</div>
+          <div><a href="tel:6059406696">(605) 940-6696</a></div>
+          <div><a href="mailto:info@hhproperties.com">info@hhproperties.com</a></div>
+          <div>PO Box 547, Wakonda, SD 57073</div>
+        </div>
+        <div class="footer-item w-100 mt-0"></div>
+        <div class="footer-item">All properties on this website are owned and operated by H&amp;H Properties.</div>
+        <div class="footer-item w-100 mt-0"></div>
+        <div class="footer-item">Serving the greater Sioux Falls, SD area: 57103, 57105, 57106, 57110</div>
+      </div>
+    </footer>
+
+		<script src="js/jquery.min.js"></script>
+		<script src="js/popper.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+	</body>
+</html>
