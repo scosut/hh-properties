@@ -274,7 +274,7 @@ function showPage(index, el, e) {
 
   page_index = index;
   el.innerHTML = getPageContent();
-  $(el).hide(0).fadeIn(1000, renderPageLinks());
+  $(el).hide().fadeIn(1000, renderPageLinks());
 }
 
 function renderPageLinks() {
@@ -400,10 +400,6 @@ $(
   })
 );
 
-$(
-  $(document.body).hide().fadeIn(2000)
-);
-
 if (date) {
   $(
     $("#date").datepicker({
@@ -424,3 +420,7 @@ try {
 }
 catch (err) {
 }
+
+$(
+  $('body').fadeIn(2000)
+)
