@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags always come first -->
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed&family=Sriracha&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css" />
+		<link rel="icon" type="image/png" href="images/favicon.png" />
+
+		<title>H&H Properties | Register</title>
+	</head>
+	<body>
+    <!-- Contact Information -->
+    <header class="header">
+      <div class="container header-container">
+        <div class="header-item">
+          <i class="fa fa-phone"></i> <a href="tel:6059406695">(605) 940-6696</a>
+        </div>
+        <div class="header-item">
+          <i class="fa fa-envelope"></i> <a href="mailto:info@hhproperties.com">info@hhproperties.com</a>
+        </div>
+      </div>
+    </header>
+
+		<!-- Top Navigation -->
+		<nav class="navbar navbar-expand-md sticky-top">
+			<div class="container">
+				<a class="navbar-brand" href="index.html"><img src="images/logo.png"></a>
+				<button id="navbarToggler" class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navbarTogglerContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				
+				<div class="collapse navbar-collapse" id="navbarTogglerContent">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="index.html">HOME</a>
+						</li>
+            <li class="nav-item">
+							<a class="nav-link" href="about.html">ABOUT</a>
+						</li>					
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">FORMS</a>
+							<div id="navbarDropdownContent" class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item" href="rental_application.html">Rental Application</a>
+							</div>
+						</li>
+            <li class="nav-item">
+							<a class="nav-link" href="login.html">LOGIN</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+    <!-- Main Heading -->
+    <div class="main-heading">
+      <div class="container">
+        <h1>User Registration</h1>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="card card-form mb-5">
+          <div class="card-body">
+              <h2 class="card-title">REGISTRATION INFORMATION</h2>
+              <p class="form-legend">(<span class="text-required">*</span> indicates a required field)</p>
+              <form class="form">
+                <div class="form-group">
+                  <label for="email" class="col-form-label required">Email Address</label>
+                  <input type="text" id="email" name="email" class="form-control flat" />
+                </div>
+                <div class="form-group">
+                  <label for="password" class="col-form-label required">Password</label>
+                  <input type="password" id="password" name="password" class="form-control flat" />
+                </div>
+                <div class="form-group">
+                  <label for="confirm" class="col-form-label required">Confirm Password</label>
+                  <input type="password" id="confirm" name="confirm" class="form-control flat" />
+                </div>                     
+                <div class="form-group d-flex align-items-center justify-content-between mt-4">
+                  <button id="btnNext" type="button" class="btn btn-next">REGISTER</button>
+                  <a href="login.html" class="form-link">Existing user? Login</a>
+                </div>
+              </form>
+          </div>
+      </div>
+    </div>
+
+    <div class="flex-grow-1"></div>
+
+    <footer class="footer">
+      <div class="container footer-container">
+        <div class="footer-item">
+          <div>&copy; H&amp;H Properties</div>
+          <div><a href="tel:6059406696">(605) 940-6696</a></div>
+          <div><a href="mailto:info@hhproperties.com">info@hhproperties.com</a></div>
+          <div>PO Box 547, Wakonda, SD 57073</div>
+        </div>
+        <div class="footer-item w-100 mt-0"></div>
+        <div class="footer-item">All properties on this website are owned and operated by H&amp;H Properties.</div>
+        <div class="footer-item w-100 mt-0"></div>
+        <div class="footer-item">Serving the greater Sioux Falls, SD area: 57103, 57105, 57106, 57110</div>
+      </div>
+    </footer>
+
+		<script src="js/jquery.min.js"></script>
+		<script src="js/popper.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+	</body>
+</html>

@@ -1,0 +1,39 @@
+.property {
+  h2 {
+    color: $accent2;
+    text-align: left;
+  }
+
+  h3 {
+    color: $accent2;
+    font-family: $font-cursive;
+    font-size: 22px;
+  }  
+
+  .details {
+    display: table;
+
+    .details-row {
+      display: table-row;
+
+      .details-col {
+        display: table-cell;
+        font-size: 18px;
+
+        &:first-child {
+          position: relative;
+          padding: 0 15px 10px 15px;
+
+          &:before {
+            content: "\f105";
+            color: $accent2;
+            font-family: "FontAwesome";
+            left: 0;
+            position: absolute;
+            top: 0;
+          }
+        }
+      }
+    }    
+  } 
+}

@@ -1,0 +1,46 @@
+{
+  "name": "hh_properties",
+  "version": "1.0.0",
+  "description": "This is a web application for H&H Properties.",
+  "main": "index.html",
+  "browserslist": [
+    "> 1%",
+    "last 10 versions"
+  ],
+  "scripts": {
+    "build": "npm run clean && npm run imagemin && npm run copyfonts && npm run usemin",
+    "clean": "rimraf dist",
+    "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* dist/fonts",
+    "imagemin": "imagemin images/exterior/* -o dist/images/exterior && imagemin images/interior/* -o dist/images/interior && imagemin images/* -o dist/img",
+    "lite": "lite-server",
+    "scss": "node-sass scss/styles.scss --output-style expanded > css/styles.css",
+    "prefix:css": "postcss css/styles.css -u autoprefixer -o css/styles.css",
+    "start": "npm run watch:all",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "usemin": "usemin about.html -d dist --htmlmin -o dist/about.html && usemin index.html -d dist --htmlmin -o dist/index.html && usemin login.html -d dist --htmlmin -o dist/login.html && usemin property_details.html -d dist --htmlmin -o dist/property_details.html && usemin register.html -d dist --htmlmin -o dist/register.html && usemin rental_application.html -d dist --htmlmin -o dist/rental_application.html",
+    "watch:scss": "onchange \"scss/*.scss\" -- npm run scss",
+    "watch:all": "parallelshell \"npm run watch:scss\" \"npm run lite\""
+  },
+  "author": "Scott Sutton",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^9.8.6",
+    "copyfiles": "^2.2.0",
+    "imagemin-cli": "^5.1.0",
+    "lite-server": "^2.5.4",
+    "node-sass": "^4.14.1",
+    "onchange": "^7.0.0",
+    "parallelshell": "3.0.1",
+    "postcss": "^7.0.32",
+    "postcss-cli": "^7.1.2",
+    "rimraf": "^3.0.2",
+    "usemin-cli": "^0.6.0"
+  },
+  "dependencies": {
+    "bootstrap": "^4.5.2",
+    "jquery": "^3.5.1",
+    "jquery-ui-dist": "^1.12.1",
+    "lightbox2": "^2.11.3",
+    "popper.js": "^1.16.1"
+  }
+}
