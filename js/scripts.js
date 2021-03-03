@@ -236,6 +236,7 @@ var page_index = 0;
 var page_count = 0;
 var time = document.getElementById("time");
 var date = document.getElementById("date");
+var hero_text = document.getElementById("hero-text");
 
 function getPages(perPageLimit, data) {
   const arr = data.slice();
@@ -351,6 +352,19 @@ function showForm(form) {
   $(form.parentElement).fadeIn(1000);
 }
 
+function typeWriter(len, str, speed, el) {
+  if (len < 0) {
+    setTimeout(typeWriter.bind(this, len + 1, str, speed, el), 1750);
+  }
+  else {
+    if (len < str.length) {
+      el.innerHTML += str.charCodeAt(len) === 10 ? "<br>" : str.charAt(len);
+      len++;
+      setTimeout(typeWriter.bind(this, len, str, speed, el), speed);
+    }
+  }
+}
+
 card_forms.forEach(function (form, index) {
   var back = form.querySelector('#btnBack');
   var next = form.querySelector('#btnNext');
@@ -422,6 +436,12 @@ try {
 catch (err) {
 }
 
-$(
-  $('body').css("display", "flex").hide().fadeIn(2000)
+$(function () {
+  if (hero_text) {
+    $('body').css("display", "flex").hide().fadeIn(2000, typeWriter(-1, "Rent your next home\nin beautiful Sioux Falls today!", 150, hero_text));
+  }
+  else {
+    $('body').css("display", "flex").hide().fadeIn(2000)
+  }
+}
 )
