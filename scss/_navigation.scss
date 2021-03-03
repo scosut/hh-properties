@@ -37,16 +37,23 @@
     }
 
     .nav-link {
+      border-bottom: 1px solid transparent;
       color: $accent1;
+      display: inline-block;
+      padding-bottom: 1px;
       transition: all 0.5s ease-in-out;
 
       @include atMd {
         border: 1px solid transparent;
+        border-radius: 0.25rem;
+        display: block;
+        padding-bottom: 8px;
       }
       
       &.active,
       &:hover {
         color: $bg-gradient-primary;
+        border-bottom: 1px solid $bg-gradient-primary;
 
         @include atMd {
           border: 1px solid $bg-gradient-primary;
