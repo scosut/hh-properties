@@ -275,6 +275,7 @@ function showPage(index, el, e) {
   page_index = index;
   el.innerHTML = getPageContent();
   $(el).hide().fadeIn(1000, renderPageLinks());
+  page_list.scrollIntoView();
 }
 
 function renderPageLinks() {
