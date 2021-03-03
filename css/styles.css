@@ -153,6 +153,19 @@ p {
   }
 }
 
+.navbar .navbar-nav .nav-item.dropdown {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .navbar .navbar-nav .nav-link {
   border-bottom: 1px solid transparent;
   color: #E4EBF2;
