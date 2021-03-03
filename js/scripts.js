@@ -423,5 +423,5 @@ catch (err) {
 }
 
 $(
-  $('body').fadeIn(2000)
+  $('body').css("display", "flex").hide().fadeIn(2000)
 )
