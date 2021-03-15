@@ -15,6 +15,32 @@
       position: absolute;
       top: 7px;
     }
+
+    &.unavailable .card-price,
+    &.coming-soon .card-price {
+      display: none;
+    }
+
+    &.coming-soon:before,
+    &.unavailable:before {      
+      content: "";
+      bottom: 0;
+      height: 100%;
+      left: 0;
+      position: absolute;
+      right: 0;
+      top: 0;      
+      width: 100%;
+      z-index: 999;
+    }
+
+    &.coming-soon:before {
+      background: url(../images/coming_soon.png) center center/70% no-repeat, linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) center center/contain no-repeat;
+    }
+
+    &.unavailable:before {
+      background: url(../images/unavailable.png) center center/70% no-repeat, linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) center center/contain no-repeat;
+    }      
   }
 
   .card-body  {

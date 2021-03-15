@@ -7,11 +7,10 @@
 		<link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed&family=Sriracha&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed&family=Sriracha&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css" />
 		<link rel="icon" type="image/png" href="images/favicon.png" />
-
-		<title>H&H Properties | Register</title>
+		<title>H&H Properties | Application Criteria</title>
 	</head>
 	<body>
     <!-- Contact Information -->
@@ -40,7 +39,7 @@
               <a class="nav-link" href="index.html">ABOUT US</a>
             </li>            				
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarRentDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">RENT</a>
+              <a class="nav-link dropdown-toggle active" href="#" id="navbarRentDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">RENT</a>
               <div id="navbarRentDropdownContent" class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarRentDropdown">
                 <a class="dropdown-item" href="properties.html">Properties</a>
                 <div class="dropdown-divider"></div>
@@ -58,36 +57,58 @@
     <!-- Main Heading -->
     <div class="main-heading">
       <div class="container">
-        <h1>User Registration</h1>
+        <h1>Application Criteria</h1>
       </div>
     </div>
 
-    <div class="container">
-      <div class="card card-form mb-5">
-          <div class="card-body">
-              <h2 class="card-title">REGISTRATION INFORMATION</h2>
-              <p class="form-legend">(<span class="text-required">*</span> indicates a required field)</p>
-              <form class="form">
-                <div class="form-group">
-                  <label for="email" class="col-form-label required">Email Address</label>
-                  <input type="text" id="email" name="email" class="form-control flat" />
-                </div>
-                <div class="form-group">
-                  <label for="password" class="col-form-label required">Password</label>
-                  <input type="password" id="password" name="password" class="form-control flat" />
-                </div>
-                <div class="form-group">
-                  <label for="confirm" class="col-form-label required">Confirm Password</label>
-                  <input type="password" id="confirm" name="confirm" class="form-control flat" />
-                </div>                     
-                <div class="form-group d-flex align-items-center justify-content-between mt-4">
-                  <button id="btnNext" type="button" class="btn btn-next">REGISTER</button>
-                  <a href="login.html" class="form-link">Existing user? Login</a>
-                </div>
-              </form>
+    <!-- Application Criteria -->
+    <div class="property mb-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 mb-2 mb-md-0 pr-md-0">
+            <img src="images/for_rent.jpg" alt="house for rent" class="img-fluid img-shadow" />
           </div>
-      </div>
-    </div>
+          <div class="col-md-4 mt-3 mt-md-0 pr-md-0">
+            <div class="message-box">
+              <p>Click the button to complete our online form. Applications will be processed in 2&#8209;3 business days. Make sure you meet all requirements listed below before applying.</p>
+              <a href="rental_application.html" class="btn btn-schedule mt-1">APPLY NOW</a>
+            </div>            
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <h2 class="mt-5 mb-4">Eligibility Requirements</h2>            
+
+            <div class="details">
+              <div class="details-row">
+                <div class="details-col">Credit score of 600 or higher</div>
+              </div>
+              <div class="details-row">
+                <div class="details-col">Positive credit references</div>
+              </div>
+              <div class="details-row">
+                <div class="details-col">Verifiable bank account</div>
+              </div>
+              <div class="details-row">
+                <div class="details-col">Verifiable employment</div>
+              </div>
+              <div class="details-row">
+                <div class="details-col">Favorable landlord references</div>
+              </div>
+              <div class="details-row">
+                <div class="details-col">Able to pass a background check</div>
+              </div>
+              <div class="details-row">
+                <div class="details-col">Have first month's rent and deposit available</div>
+              </div>
+              <div class="details-row">
+                <div class="details-col">No pets</div>
+              </div>
+            </div>               
+	        </div>
+        </div>
+      </div>      
+    </div> 
 
     <div class="flex-grow-1"></div>
 
@@ -104,11 +125,11 @@
         <div class="footer-item w-100 mt-0"></div>
         <div class="footer-item">Serving the greater Sioux Falls, SD area: 57103, 57105, 57106, 57110</div>
       </div>
-    </footer>
+    </footer>    
 
 		<script src="js/jquery.min.js"></script>
 		<script src="js/popper.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>  
     <script src="js/scripts.js"></script>
 	</body>
 </html>

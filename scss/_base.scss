@@ -1,12 +1,11 @@
 body {
   color: $text-primary;
-  display: flex;
+  display: none;
   flex-direction: column;
   font-family: $font-sans-serif;
   font-size: 16px;
   line-height: 1.2;
   min-height: 100vh;
-  display: none;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -16,7 +15,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h2 {
   font-family: $font-cursive;
-  font-size: 24px;
+  font-size: 27px;
   text-align: center;
 }
 
@@ -52,4 +51,23 @@ p {
 
 .text-monospace {
   font-family: monospace;
+}
+
+.confirm {
+  line-height: 1.5;
+}
+
+.bs-tooltip-bottom {
+  margin-top: 5px;
+
+  .tooltip-inner {
+    background-color: $bg-primary;
+    color: $accent1;
+  }
+
+  .arrow {
+    &::before {
+      border-bottom-color: $bg-primary;
+    }
+  }
 }

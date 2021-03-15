@@ -8,7 +8,18 @@
     color: $accent2;
     font-family: $font-cursive;
     font-size: 22px;
-  }  
+  }
+
+  .message-box {
+    border: 1px solid $accent2;
+    box-shadow: 4px 4px 2px rgba($accent2, .2);
+    padding: 20px;
+
+    p {
+      font-size: 16px;
+      line-height: 1.5;  
+    }
+  }
 
   .details {
     display: table;
@@ -18,11 +29,17 @@
 
       .details-col {
         display: table-cell;
-        font-size: 18px;
+        font-size: 16px;
+        padding-bottom: 10px;
+
+        @include atSm {
+          font-size: 18px;
+        }
 
         &:first-child {
           position: relative;
-          padding: 0 15px 10px 15px;
+          padding-left: 15px;
+          padding-right: 15px;
 
           &:before {
             content: "\f105";
@@ -32,6 +49,11 @@
             position: absolute;
             top: 0;
           }
+        }
+
+        p {
+          font-size: inherit;
+          margin: 0;
         }
       }
     }    
