@@ -22,7 +22,7 @@ var properties = [
     "garage": 2,
     "bdrm": 4,
     "bath": 3,
-    "status": "available",
+    "status": "unavailable",
     "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2893.9659404855015!2d-96.79153678438603!3d43.50304607014506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x878ec99cd41f49f9%3A0x621f586a5e896c60!2s5109%20W%2055th%20St%2C%20Sioux%20Falls%2C%20SD%2057106!5e0!3m2!1sen!2sus!4v1615738855681!5m2!1sen!2sus"
   },
   {
@@ -35,7 +35,7 @@ var properties = [
     "garage": 2,
     "bdrm": 4,
     "bath": 2,
-    "status": "coming-soon",
+    "status": "unavailable",
     "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2894.012385818332!2d-96.80938578438605!3d43.50207717020746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x878ec96f5eddd55f%3A0xa524670505b11a6a!2s6512%20W%2055th%20St%2C%20Sioux%20Falls%2C%20SD%2057106!5e0!3m2!1sen!2sus!4v1615740661526!5m2!1sen!2sus"
   },
   {
@@ -61,7 +61,7 @@ var properties = [
     "garage": 1,
     "bdrm": 3,
     "bath": 2,
-    "status": "available",
+    "status": "unavailable",
     "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2892.613644336553!2d-96.6860708843853!3d43.53124886832574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x878eb4164a7f62f1%3A0x5a5916319b7b8fcf!2s1600%20S%20Comet%20Rd%2C%20Sioux%20Falls%2C%20SD%2057103!5e0!3m2!1sen!2sus!4v1615740757942!5m2!1sen!2sus"
   },
   {
@@ -74,7 +74,7 @@ var properties = [
     "garage": 1,
     "bdrm": 3,
     "bath": 2.5,
-    "status": "available",
+    "status": "unavailable",
     "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2892.6104501033296!2d-96.71968838438532!3d43.531315468321395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x878eb5c5fef25f53%3A0x1a85b44250898110!2s1601%20E%20Dana%20Dr%2C%20Sioux%20Falls%2C%20SD%2057105!5e0!3m2!1sen!2sus!4v1615740786771!5m2!1sen!2sus"
   },
   {
@@ -87,7 +87,7 @@ var properties = [
     "garage": 2,
     "bdrm": 3,
     "bath": 2,
-    "status": "available",
+    "status": "coming-soon",
     "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2894.3187058279636!2d-96.80074318438623!3d43.49568657061964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x878ec9739dcef77d%3A0x4c7299dd91215f2a!2s5512%20S%20Danberry%20Dr%2C%20Sioux%20Falls%2C%20SD%2057106!5e0!3m2!1sen!2sus!4v1615740821037!5m2!1sen!2sus"
   },
   {
@@ -100,7 +100,7 @@ var properties = [
     "garage": 2,
     "bdrm": 3,
     "bath": 2,
-    "status": "available",
+    "status": "unavailable",
     "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2893.066188346443!2d-96.66957148438557!3d43.521812468934534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x878eb401bb3ed0a3%3A0x24ecbbaf0a9d9365!2s2605%20S%20Groveland%20Ave%2C%20Sioux%20Falls%2C%20SD%2057110!5e0!3m2!1sen!2sus!4v1615740847997!5m2!1sen!2sus"
   },
   {
@@ -113,7 +113,7 @@ var properties = [
     "garage": 2,
     "bdrm": 3,
     "bath": 2,
-    "status": "available",
+    "status": "unavailable",
     "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2893.0673200397114!2d-96.66869448438557!3d43.5217888689361!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x878eb4004d2ab80f%3A0x599297bd22fbf73f!2s2612%20S%20Groveland%20Ave%2C%20Sioux%20Falls%2C%20SD%2057110!5e0!3m2!1sen!2sus!4v1615740874933!5m2!1sen!2sus"
   },
   {
@@ -139,7 +139,7 @@ var properties = [
     "garage": 2,
     "bdrm": 3,
     "bath": 3,
-    "status": "available",
+    "status": "unavailable",
     "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2893.657076430277!2d-96.70303418438584!3d43.509488869729466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x878eb685e6bf05a9%3A0x3f43d0891a6f1549!2s3804%20S%20Lewis%20Ave%2C%20Sioux%20Falls%2C%20SD%2057103!5e0!3m2!1sen!2sus!4v1615740925724!5m2!1sen!2sus"
   },
   {
@@ -152,7 +152,7 @@ var properties = [
     "garage": 2,
     "bdrm": 3,
     "bath": 2,
-    "status": "available",
+    "status": "unavailable",
     "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2893.133978784553!2d-96.67007268438557!3d43.52039876902582!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x878eb401e7433423%3A0x851cde0b8696fa5a!2s2717%20S%20Maywood%20Dr%2C%20Sioux%20Falls%2C%20SD%2057110!5e0!3m2!1sen!2sus!4v1615740955173!5m2!1sen!2sus"
   },
   {
@@ -165,7 +165,7 @@ var properties = [
     "garage": 2,
     "bdrm": 3,
     "bath": 2,
-    "status": "available",
+    "status": "coming-soon",
     "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2893.021951222815!2d-96.67683908438552!3d43.522734968875056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x878eb41ccd0dafb3%3A0x40886955be231056!2s2612%20S%20Melanie%20Ln%2C%20Sioux%20Falls%2C%20SD%2057103!5e0!3m2!1sen!2sus!4v1615740985363!5m2!1sen!2sus"
   },
   {
@@ -178,7 +178,7 @@ var properties = [
     "garage": 2,
     "bdrm": 3,
     "bath": 2.5,
-    "status": "available",
+    "status": "unavailable",
     "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2892.896361658592!2d-96.75955488438547!3d43.52535386870623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x878eca0f7590897d%3A0x1fff05d51906a9c8!2s2600%20W%20Minnehaha%20Dr%2C%20Sioux%20Falls%2C%20SD%2057105!5e0!3m2!1sen!2sus!4v1615741014787!5m2!1sen!2sus"
   },
   {
@@ -191,7 +191,7 @@ var properties = [
     "garage": 3,
     "bdrm": 4,
     "bath": 3,
-    "status": "available",
+    "status": "unavailable",
     "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2892.7628480827957!2d-96.8287887843854!3d43.5281378685264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x878ecbf2514cb40d%3A0xcdb0ef96309cbdf8!2s1813%20S%20Monticello%20Ave%2C%20Sioux%20Falls%2C%20SD%2057106!5e0!3m2!1sen!2sus!4v1615741056144!5m2!1sen!2sus"
   },
   {
@@ -204,7 +204,7 @@ var properties = [
     "garage": 2,
     "bdrm": 3,
     "bath": 2,
-    "status": "available",
+    "status": "unavailable",
     "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2893.0816052273826!2d-96.67539798438555!3d43.52149096895542!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x878eb402c2a76ccd%3A0xc2f44cf0b5e8ce86!2s2809%20S%20Pepper%20Ridge%20Ave%2C%20Sioux%20Falls%2C%20SD%2057103!5e0!3m2!1sen!2sus!4v1615741087299!5m2!1sen!2sus"
   },
   {
@@ -217,7 +217,7 @@ var properties = [
     "garage": 3,
     "bdrm": 3,
     "bath": 2,
-    "status": "available",
+    "status": "unavailable",
     "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2893.908837813036!2d-96.819599384386!3d43.50423727006818!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x878ec95c5edd4b47%3A0x3e37ab6b40c3619c!2s4616%20S%20Samantha%20Dr%2C%20Sioux%20Falls%2C%20SD%2057106!5e0!3m2!1sen!2sus!4v1615741113123!5m2!1sen!2sus"
   },
   {
@@ -230,7 +230,7 @@ var properties = [
     "garage": 3,
     "bdrm": 4,
     "bath": 3,
-    "status": "available",
+    "status": "unavailable",
     "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2893.701178136248!2d-96.6839194843859!3d43.50856896978892!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x878eb6bcc2e5e753%3A0x398500ef3331cb4b!2s4016%20S%20Tuscany%20Ct%2C%20Sioux%20Falls%2C%20SD%2057103!5e0!3m2!1sen!2sus!4v1615741190189!5m2!1sen!2sus"
   },
   {
@@ -256,10 +256,17 @@ var properties = [
     "garage": 2,
     "bdrm": 4,
     "bath": 2.5,
-    "status": "available",
+    "status": "unavailable",
     "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2892.5407994996267!2d-96.7207542843853!3d43.53276766822778!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x878eb5c63f9ebf89%3A0x832079e758321ebe!2s608%20E%20Wiswall%20Pl%2C%20Sioux%20Falls%2C%20SD%2057105!5e0!3m2!1sen!2sus!4v1615741245121!5m2!1sen!2sus"
   }
 ];
+
+properties.sort(function (a, b) {
+  var x = a.status.toLowerCase();
+  var y = b.status.toLowerCase();
+
+  return x < y ? -1 : x > y ? 1 : 0;
+});
 
 var prop_card = "";
 prop_card += "<div class=\"col-sm-6 col-md-4 mb-5\">";
@@ -511,7 +518,7 @@ if (date) {
 }
 
 if (time) {
-  timepicker(time, { min: 9, max: 18, step: 15 });
+  timepicker(time, { min: 9, max: 18, step: 60 });
 }
 
 try {
@@ -665,7 +672,7 @@ if (terms && agree) {
 
 if (location.search) {
   var id = Number(location.search.replace('?id=', ''));
-  var els = document.querySelectorAll(".main-heading h1, .main-heading p, #property-main-image, #map-container, #details-sqft, #details-garage, #details-bdrm, #details-bath, #details-price");
+  var els = document.querySelectorAll(".main-heading h1, .main-heading p, #property-main-image, #map-container, #details-sqft, #details-garage, #details-bdrm, #details-bath, #details-price, #details-deposit");
 
   if (els.length) {
     var property = properties.filter(function (property) {
@@ -702,6 +709,11 @@ if (location.search) {
       els[6].innerHTML = property[0].bdrm;
       els[7].innerHTML = property[0].bath;
       els[8].innerHTML = property[0].price;
+
+      if (property[0].status !== "available") {
+        els[8].parentElement.innerHTML = "";
+        els[9].parentElement.innerHTML = "";
+      }
     }
   }
 }
